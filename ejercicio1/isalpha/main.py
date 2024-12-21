@@ -1,6 +1,10 @@
 def run(text: str) -> bool:
-    # TODO
-    return isalpha
+    ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
+    for c in text.lower():
+        if c not in ALPHABET:
+            return False
+    return True
+   
 
 
 # DO NOT TOUCH THE CODE BELOW
